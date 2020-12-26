@@ -52,7 +52,7 @@ function TodoListCard() {
     return (
         <React.Fragment>
             <h1 className='card-header-title header'>
-            You have {props.numTodos} Todos
+                You have Todos
             </h1>
             <AddItemForm onNewItem={onNewItem} />
             {items.length === 0 && (
@@ -156,9 +156,8 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
                     >
                         <i
                             onClick={toggleCompletion}
-                            className={`far ${
-                                item.completed ? 'fa-check-square' : 'fa-square'
-                            }`}
+                            className={`far ${item.completed ? 'fa-check-square' : 'fa-square'
+                                }`}
                         />
                     </Button>
                 </Col>
