@@ -51,7 +51,7 @@ function TodoListCard() {
 
     return (
         <React.Fragment>
-            <h2 className='card-header-title header'>
+            <h2 className='card-header'>
                 Todo App
             </h2>
             <AddItemForm onNewItem={onNewItem} />
